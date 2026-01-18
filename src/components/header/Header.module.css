@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: rgba(2, 5, 8, 0.85);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 800;
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a, .genresDropdown span {
+    color: #cbd5e0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav a:hover, .genresDropdown:hover span {
+    color: #00b4d8;
+}
+
+.genresDropdown {
+    position: relative;
+    padding: 10px 0;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0f1114;
+    min-width: 220px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.dropdownContent a {
+    padding: 12px 20px;
+    text-transform: none;
+    display: block;
+    letter-spacing: normal;
+}
+
+.dropdownContent a:hover {
+    background: #00b4d8;
+    color: white;
+}
+
+.genresDropdown:hover .dropdownContent {
+    display: block;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

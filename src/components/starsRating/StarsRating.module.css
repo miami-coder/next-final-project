@@ -1,0 +1,37 @@
+.starsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.starsContainer {
+    display: flex;
+    gap: 2px;
+}
+
+.starOutline {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.starBase {
+    color: #333;
+}
+
+.starFilled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffc107;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.ratingNumber {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+}
